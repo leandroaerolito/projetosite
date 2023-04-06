@@ -1,0 +1,289 @@
+* { box-sizing: border-box; padding: 0; margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.loja { display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.loja img {
+    width: 250px;
+    border-radius: 10px 20px;
+    
+}
+
+.banner {
+    background: url(../imagens/banner1.png);
+    background-size: cover;
+    height: 57vh;
+   /* max-width: 100%; */
+   
+}
+
+.fundo {
+    /* background-image: url(../imagens/fundo-dois.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    
+    
+
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header img {
+    width: 120px; 
+    display: flex;
+}
+
+.txtbio {
+    color: #fff;
+}
+
+.navegation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navegation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    
+}
+
+.navegation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+
+.navegation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navegation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+
+
+
+.livro1 { display: flex;
+    justify-content: flex-start;
+    background-color: rgba(242, 189, 255, 0.753);
+    /* width: 95%; */
+    height: 20%;
+    border-radius: solid, black, 10px;                
+}
+
+.livro1 img {
+    width: 250px;
+    height: 300px;
+}
+
+.livro1 p {
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: left;
+    line-height: 1.5rem
+}
+
+.livro1 h2 {
+    font-size: 25px;
+    font-style: italic;
+    color: antiquewhite;
+    text-align: left;
+    margin-top: 75px;
+    text-shadow: 2px 3px 3px black;
+}
+
+
+.livro2 { background-color: rgba(255, 217, 2, 0.699);
+    /* width: 95%; */
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.livro2  { display: flex;
+           justify-content: flex-start; 
+           align-items: center;
+        }
+
+.livro2 img {
+    width: 250px;
+    height: 300px;
+}
+
+.livro2 p {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.livro2 h2 {
+    font-size: 25px;
+    font-style: italic;
+    text-align: left;
+    margin-top: 10px;
+    color: antiquewhite;
+    text-shadow: 2px 3px 3px black;
+}
+
+
+.livro3 { background-color: rgb(197, 206, 206);
+    /* width: 95%; */
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.livro3 { display: flex;
+          justify-content: flex-start;  
+}
+
+.livro3 img { width: 250px; height: 300px; }
+
+.livro3 p { font-size: 20px;
+            margin-top: 40px;
+            text-align: left;
+            line-height: 1.5rem;
+}
+
+.livro3 h2 { font-size: 25px;
+    font-style: italic;
+    color: antiquewhite; 
+    text-align: left;
+    margin-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 3px 3px black;
+}
+
+
+.livro4 { display: flex;
+    justify-content: flex-start;
+}
+
+.livro4 { 
+    
+    /* background-color: rgba(0, 225, 255, 0.808); */
+    /* width: 95%; */
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.livro4 img { width: 250px; width: 200px;}
+
+.livro4 p {
+    font-size: 20px;
+    margin-top: 90px;
+    text-align: left;
+    line-height: 1.5rem;
+    color: antiquewhite;
+}
+
+.livro4 h2 { font-size: 25px;
+    font-style: italic;
+    color: antiquewhite;
+    text-align: left;
+    margin-top: 100px;
+    text-shadow: 2px 3px 3px  rgb(212, 93, 248);
+
+}
+
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 22px;
+       background-color: rgb(0, 0, 0);
+       
+       
+}
+
+article { box-shadow: rgb(212, 93, 248) 0px 0px 20px;
+    padding: 49px 112px;
+    border-radius: 26px 81px;
+    margin: 88px;
+}
+          
+
+.flutuar { float: left;
+           margin-right: 10px;
+}
+
+
+footer {
+    background-color: blueviolet;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+footer img {
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+footer p { 
+    margin-bottom: 20px;
+}
+
+
+.logo-site {
+    width: 50%;
+    height: 10%;
+}
